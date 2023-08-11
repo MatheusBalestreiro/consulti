@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container_page {
+  display: flex;
+  height: 100vh;
+}
+
+.navbar {
+  padding-top: 0;
+  width: 15%;
+}
+
+.nav-link {
+  color: rgb(197, 197, 197);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4e9abf;
+}
+
+.navbar_content {
+  height: 100vh;
+  width: 100%;
+}
+
+li.nav-item {
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  padding: 12px 16px;
+  margin-bottom: 4px;
+}
+
+li.nav-item:hover {
+  background-color: #414549;
+  cursor: pointer;
+}
+
+.nav-item .item-props {
+  color: rgb(180, 180, 180);
+  transition: color 0.5s ease;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-item .item-props:hover {
+  color: #4e9abf;
+  text-decoration: none;
+}
+
+.item-props i {
+  margin-right: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.item-props:hover i {
+  opacity: 1;
+}
+
+.active {
+  background-color: #454b52;
+  color: #00aecd;
+}
+
+
+.content {
+  width: calc(100% - 15%);
+  background: linear-gradient(
+    45deg,
+    rgba(26, 126, 192, 0.6),
+    rgba(60, 153, 54, 0.6)
+  );
+  padding: 20px;
+}
+
+.table-container {
+  background-color: #f8f9fa;
+  max-height: 100%; /* Defina a altura máxima desejada */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  height: 95vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.table-responsive {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table {
+  border-radius: 10px;
+}
+
+.table-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table-dark {
+  color: #fff;
+  background-color: #212529;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-striped tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table th,
+.table td {
+  border-top: none;
+}
+
+.circle-icon-user{
+  background-color: #3b3b3b;
+  width: 40px; 
+  height: 40px; 
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(101, 101, 101)
+}
+
+.search-input {
+  height: 100%;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.input-divider {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group .btn-search {
+  background-color: #4e9abf;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group .btn-search:hover {
+  background-color: #3e85a0;
+}
+
+.btn-new-user {
+  background-color: #4e9abf;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-new-user:hover {
+  background-color: #3e85a0;
+  color: #f8f9fa;
+}
+
+.table-dark {
+  color: #fff;
+  background-color: #212529;
+}
+
+.modal-header {
+  background-color: #262129;
+}
+
+.modal-title {
+  color: white;
+}
+
+.modal-header .btn-close {
+  color: white;
+  background-color: rgb(255, 74, 74);
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.modal-header .btn-close:hover {
+  background-color: rgb(255, 36, 36);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-role {
+  color: rgba(189, 187, 187, 0.7);
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.logout {
+  width: 40px;
+  text-align: center;
+  background-color: rgb(231, 78, 78);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: rgb(157, 30, 30);
+}
+
+.pagination .page-item {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.pagination .page-item .page-link {
+  color: #fff;
+  background-color: #4e9abf;
+  border: none;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #265977;
+  font-weight: bold;
+}
+
+.pagination .page-item a:hover {
+  background-color: #286f98;
+}
+
+/* Ajustando tamanhos de botões e fontes */
+.actions-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.next-patient,
+.add-patient {
+  background-color: #007b81;
+  width: 260px; /* Reduzindo o tamanho dos botões */
+  height: 100px; /* Reduzindo o tamanho dos botões */
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-size: 24px; /* Reduzindo o tamanho da fonte */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer; /* Adicionando cursor de apontar para indicar que são clicáveis */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Adicionando efeito de hover para os botões */
+.next-patient:hover,
+.add-patient:hover {
+  background-color: #005f64;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.4);
+}
+
+.add-patient {
+  background-color: rgba(54, 153, 104, 0.8); /* Ajustando a transparência */
+  padding: 8px 16px; /* Reduzindo o espaçamento interno */
+}
+
+.icon-circle {
+  width: 60px; /* Reduzindo o tamanho do círculo */
+  height: 60px; /* Reduzindo o tamanho do círculo */
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  font-size: 24px;
+}
+
+.icon-circle i {
+  margin: 0; /* Removendo margem para o ícone dentro do círculo */
+  color: #38414a;
+}
+
+/* Adicionando margem entre os botões */
+.actions-buttons > div {
+  margin-right: 10px;
+}
+
+/* Adicionando margem apenas ao último botão para separá-lo do canto direito */
+.actions-buttons > div:last-child {
+  margin-right: 0;
+}
+.container-calendar {
+  overflow-y: auto;
+  max-height: 86%;
+  border-top: 5px solid  #262129;
+  border-bottom: 5px solid  #262129;
+}
+
+.container-calendar::-webkit-scrollbar {
+  display: none;
+}
+
+
+#calendar {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #212529;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#calendar a {
+  color: black;
+  text-decoration: none;
+}
+
+#calendar td {
+  background-color: #e6e6e6;
+}
+
+#calendar thead {
+  background-color: #2c3e50;
+}
+
+#calendar .fc-theme-standard .fc-scrollgrid {
+  border: 1px solid #212529;
+}
+
+#calendar thead a {
+  color: white;
+  font-weight: bold;
+}
+
+.fc-toolbar {
+  color: white;
+}
+
+.fc-event {
+  background-color: #ff4e4e;
+  color: white;
+  border: none;
+}
+
+.fc-popover {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  background-color: #454b52;
+}
